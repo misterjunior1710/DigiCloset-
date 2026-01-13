@@ -9,10 +9,15 @@
     <style>
         /* Retro 2006 Styles that Tailwind can't easily do alone */
         body {
-            background-color: #008080; /* Classic Win95/98 Teal */
-            background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            /* Matches the dark teal from the provided image */
+            background-color: #002b2b; 
+            /* High-fidelity dot pattern mimicking the reference image */
+            background-image: radial-gradient(#000 1.2px, transparent 0);
+            background-size: 5px 5px;
             font-family: "Tahoma", "Arial", "Verdana", sans-serif;
             cursor: url('https://cur.cursors-4u.net/games/gam-4/gam384.cur'), auto;
+            margin: 0;
+            padding: 0;
         }
         
         .glossy-button {
@@ -80,12 +85,15 @@
   "imports": {
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3"
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai"
   }
 }
 </script>
 </head>
 <body>
     <div id="root"></div>
+    <!-- Explicitly import the index module to ensure the React app mounts -->
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>
