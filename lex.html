@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>~*~ DigiCloset ~*~ Chat with Lexi</title>
+    <style>
+        body { background: #002b2b; font-family: Tahoma; margin: 20px; }
+        #main-table { width: 800px; margin: 0 auto; background: #fff; border: 4px solid #fff; border-collapse: collapse; }
+        .sidebar { width: 160px; background: #d4d0c8; vertical-align: top; border-right: 2px solid #fff; }
+        .main-content { padding: 25px; background: #f8f8f8; min-height: 550px; vertical-align: top; }
+        .nav-link { display: block; padding: 8px; font-size: 11px; font-weight: bold; color: #000; text-decoration: none; border-bottom: 1px solid #808080; }
+        .nav-header { background: #000080; color: #fff; padding: 5px; font-size: 11px; text-align: center; }
+        .aim-box { width: 350px; border: 2px solid #000080; background: #fff; margin: 20px auto; }
+        .aim-title { background: linear-gradient(to right, #000080, #0821d3); color: #fff; font-size: 11px; padding: 3px; font-weight: bold; display: flex; justify-content: space-between; }
+        #chat-window { height: 250px; overflow-y: scroll; padding: 10px; font-size: 12px; background: #fff; border-bottom: 1px solid #ccc; }
+        .chat-input-area { padding: 10px; background: #d4d0c8; }
+        #chat-msg { width: 75%; padding: 3px; border: 1px solid #000; font-size: 11px; }
+    </style>
+</head>
+<body>
+    <table id="main-table" border="0">
+        <tr><td colspan="2" style="background: #000; padding: 10px; text-align: center;"><h1 style="color: #fff; margin: 0; font-style: italic;">CHAT WITH LEXI</h1></td></tr>
+        <tr>
+            <td class="sidebar">
+                <div class="nav-header">Main Links</div>
+                <a href="index.html" class="nav-link">Home Page</a>
+                <a href="closet.html" class="nav-link">The Closet</a>
+                <a href="leaderboard.html" class="nav-link">Leaderboard</a>
+                <a href="lex.html" class="nav-link">Chat with Lexi</a>
+                <a href="wishlist.html" class="nav-link">Wishlist</a>
+                <a href="guestbook.html" class="nav-link">Guestbook</a>
+                <a href="topsites.html" class="nav-link">TopSites</a>
+            </td>
+            <td class="main-content">
+                <h2 style="color: #ff00ff; border-bottom: 3px double #ff00ff; text-transform: uppercase;">AOL Instant Messenger</h2>
+                <div class="aim-box">
+                    <div class="aim-title"><span>Lexi - Instant Message</span><span>_ □ X</span></div>
+                    <div id="chat-window">
+                        <p><span style="color: red; font-weight: bold;">Lexi:</span> hiii! omg welcome back!! ask me for style tips! <3</p>
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="chat-msg" placeholder="Type a message...">
+                        <button style="font-size: 10px;" onclick="app.sendMessage()">Send</button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>

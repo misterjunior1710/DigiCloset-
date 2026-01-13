@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>~*~ DigiCloset ~*~ The Closet</title>
+    <style>
+        /* Shared styles from index.html (truncated for brevity in XML, but fully functional) */
+        body { background: #002b2b; font-family: Tahoma; margin: 20px; }
+        #main-table { width: 800px; margin: 0 auto; background: #fff; border: 4px solid #fff; border-collapse: collapse; }
+        .sidebar { width: 160px; background: #d4d0c8; vertical-align: top; border-right: 2px solid #fff; }
+        .main-content { padding: 25px; background: #f8f8f8; min-height: 550px; vertical-align: top; }
+        .nav-link { display: block; padding: 8px; font-size: 11px; font-weight: bold; color: #000; text-decoration: none; border-bottom: 1px solid #808080; }
+        .nav-header { background: #000080; color: #fff; padding: 5px; font-size: 11px; text-align: center; }
+        .glossy-button { background: linear-gradient(#fff, #a1a1a1); border: 2px outset #fff; padding: 5px 15px; font-weight: bold; font-size: 11px; }
+        .fit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 20px; }
+        .fit-card { background: #fff; border: 1px solid #999; padding: 8px; box-shadow: 4px 4px 0 rgba(0,0,0,0.1); text-align: center; }
+        .fit-card img { width: 100%; height: 180px; object-fit: cover; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <table id="main-table" border="0">
+        <tr><td colspan="2" style="background: #000; padding: 10px; text-align: center;"><h1 style="color: #fff; margin: 0; font-style: italic;">THE CLOSET</h1></td></tr>
+        <tr>
+            <td class="sidebar">
+                <div class="nav-header">Main Links</div>
+                <a href="index.html" class="nav-link">Home Page</a>
+                <a href="closet.html" class="nav-link">The Closet</a>
+                <a href="leaderboard.html" class="nav-link">Leaderboard</a>
+                <a href="lex.html" class="nav-link">Chat with Lexi</a>
+                <a href="wishlist.html" class="nav-link">Wishlist</a>
+                <a href="guestbook.html" class="nav-link">Guestbook</a>
+                <a href="topsites.html" class="nav-link">TopSites</a>
+            </td>
+            <td class="main-content">
+                <h2 style="color: #ff00ff; border-bottom: 3px double #ff00ff; text-transform: uppercase;">Community Mirror Selfies</h2>
+                <div style="background: #eee; padding: 15px; border: 2px inset #fff;">
+                    <h4 style="margin-top: 0;">Upload Your Fit:</h4>
+                    <p style="font-size: 10px; color: #666; font-style: italic;">Note: Uploads are stored locally in your browser cache.</p>
+                    <input type="file" id="fit-upload" accept="image/*" style="font-size: 11px;">
+                    <button class="glossy-button" onclick="app.uploadFit()">Upload Now!</button>
+                </div>
+
+                <div id="fit-container" class="fit-grid">
+                    <!-- Fits will appear here -->
+                    <div class="fit-card"><img src="https://images.unsplash.com/photo-1529139572765-3974d8453289?auto=format&fit=crop&w=200&h=250"><p style="font-size: 9px; margin: 5px 0;">~* Classic 06 Look *~</p></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>

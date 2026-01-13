@@ -1,8 +1,5 @@
 {
-  "name": "DigiCloset v1.2 (Static)",
-  "description": "A pure static HTML/CSS/VanillaJS recreation of a 2006 fashion community, powered by Gemini AI for interactive styling advice.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
+  "name": "DigiCloset v2.0 (Persistent)",
+  "description": "A 100% static HTML/CSS/VanillaJS recreation of a 2006 fashion community, now featuring persistent Login, local Fit Uploads, Wishlists, and a Leaderboard via localStorage.",
+  "requestFramePermissions": []
 }
